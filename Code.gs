@@ -1,10 +1,7 @@
-function myFunction() {
+function scraper() {
   var ss=SpreadsheetApp.getActiveSpreadsheet();
   var ui=SpreadsheetApp.getUi();
   var sheet=ss.getActiveSheet();
-  //var a1=ui.prompt('Data Range', 'Please type in the data range in A1 notation.', ui.ButtonSet.OK_CANCEL)
-  //if(a1.getSelectedButton()==ui.Button.CANCEL){Logger.log("User Cancelled");return;}
-  //var range=sheet.getRange(a1.getResponseText()).getValues();
   var range=sheet.getActiveRange().getDisplayValues();
   var edit=[];var skip=false;var myXX=["MY18","MY19"];var current=[];
   for(var i=0;i<range.length;i++){
