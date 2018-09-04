@@ -40,7 +40,7 @@ function scraper() {
       }
       else{range2[range2.length]=range[i];}
   }
-  range2[0][0]="";
+  range2[0][0]="model_code";
   for(i=1;i<range2.length;i++){
     empty=true;
     for(j=1;j<range2[i].length&&empty;j++){
